@@ -2,7 +2,6 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 100vh;
     background-color: #f2f2f2;
    
 }
@@ -30,7 +29,7 @@ img {
 }
 
 .make {
-    font-size: 30px;
+    font-size: 1.5rem;
     margin-top: 0;
     margin-bottom: 10px;
 }
@@ -51,10 +50,10 @@ img {
     display: flex;
     justify-content: space-between;
     align-items: end;
-    border: 1px solid gray;
+    /* border: 1px solid gray; */
     padding-right: 10px;
     height: 38px;
-    border-radius: 5px;
+    /* border-radius: 5px; */
 
 }
 
@@ -75,4 +74,34 @@ button {
 .pressed {
     box-shadow: 0 0 20px white;
     background-color: green;
+}
+
+@media (max-width: 646px) {
+    h1 {
+        width: 90%;
+    }
+
+}
+
+@media (max-width: 465px) {
+    .grid {
+        grid-template-columns: auto;
+        grid-template-rows: auto 40px auto 40px;
+
+    }
+
+    .p {
+        width: fit-content;
+        border: 0;
+    }
+
+    h1 {
+        text-align: normal;
+    }
+
+    .make {
+        text-align: normal;
+        font-size: 1.2rem;
+        width: 45%;
+    }
 }
