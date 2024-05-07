@@ -49,7 +49,7 @@ $("#declare").on("click", function() {
     
     // alert("The winner is " + winner + " with a bid amount of $" + maxAmount.toFixed(2));
     if(names.length > 0){
-        $(".body").html("<div style='background-image: url(./con2.png); width: 100%; height: 100vh; display: flex; justify-content: center; align-items: center; font-size: 1.2rem; font-family: cursive; flex-direction: column;'><h1 style='width: 90%; color: yellowgreen; text-align: center;'></h1> <img src='./auc3.jpg' alt='' style='height: 30%; width: 25%;'></div>");
+        $(".body").html("<div style='background-image: url(./con2.png); width: 100%; height: 100vh; display: flex; justify-content: center; align-items: center; font-size: 1.2rem; font-family: cursive; flex-direction: column;'><h1 style='width: 90%; color: yellowgreen; text-align: center;'></h1> <img src='./auc3-removebg-preview.png' alt='' style='height: 30%; width: 25%;'></div>");
 
         $(".body h1").text("The winner is " + toTitle(winner) + " with a bid of $" + maxAmount.toFixed(2));
     }
