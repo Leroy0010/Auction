@@ -1,5 +1,3 @@
-
-
 var names = [];
 var bids = [];
 
