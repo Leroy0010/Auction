@@ -29,7 +29,7 @@ $("#save").on("click", function (){
             nameInput = "";
             bidInput = "";
             $("input:text").val("");
-            $("#save").addClass('pressed')
+            $("#save").addClass('pressed');
             setTimeout(function (){
                 $("#save").removeClass('pressed')
             }, 200);
@@ -49,23 +49,6 @@ $("button").hover(function () {
 
 });
 
-
-function isEmpty (){
-    if ($("#name").val().length < 3 && $("#amount").val().length === 0){
-        alert("Name field must have at least 3 characthers.\nAnd Amount field can't be empty.");
-    }
-    else if($("#name").val().length < 3) {
-        alert("Name field must have at least 3 characthers.");
-    }
-    else if($("#amount").val().length === 0){
-        alert("And Amount field can't be empty.");
-    }
-    else if ($("#amount").val() < 100){
-        alert("Bid can't be less than $100.00.");
-    }
-}
-
-
 $("#declare").on("click", function() {
     var maxAmount = bids[0];
     var winner = names[0];
@@ -76,7 +59,6 @@ $("#declare").on("click", function() {
            }
     }
     
-    // alert("The winner is " + winner + " with a bid amount of $" + maxAmount.toFixed(2));
     if(names.length > 0){
         $(".body").html("<div style='background-image: url(./on2.png); width: 100%; height: 100vh; display: flex; justify-content: center; align-items: center; font-size: 1.2rem; flex-direction: column;'><h1 style='width: 90%; color: yellowgreen; text-align: center;'></h1> <img src='./auc3-removebg-preview.png' alt='' style='height: 30%; width: 25%;'></div>");
 
@@ -90,13 +72,11 @@ $("#declare").on("click", function() {
             jsConfetti.addConfetti({
                 confettiRadius: 8,
                 confettiNumber: 1000,
-              })
+              });
     
     
             jsConfetti.addConfetti();
         }, 500);
       
     }
-
-    
 });
