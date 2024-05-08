@@ -15,7 +15,7 @@ $("#save").on("click", function (){
         alert("Name field must have at least 3 characthers.");
     }
     else if($("#amount").val().length === 0){
-        alert("And Amount field can't be empty.");
+        alert("Amount field can't be empty.");
     }
     else if ($("#amount").val() < 100){
         alert("Bid can't be less than $100.00.");
