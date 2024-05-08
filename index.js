@@ -78,5 +78,5 @@ $("#declare").on("click", function() {
             jsConfetti.addConfetti();
         }, 500);
       
-    }
+    } else{alert("There are no bidders yet.")};
 });
